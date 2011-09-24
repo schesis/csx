@@ -2,48 +2,36 @@
 
 # CSX example - CSS 2.1 spec stylesheet
 
+set -e
+
 NAME="zp-old-project"
 
 cd $(dirname ${0})
 
-base="examples/${NAME}"
+dir="examples/${NAME}"
 cwd2="$(basename $(dirname $(pwd)))/$(basename $(pwd))"
 
-if [[ ${base} != ${cwd2} ]]
+if [[ ${dir} != ${cwd2} ]]
 then
-    echo >&2 "${0}: must be run from ${base}"
+    echo >&2 "${0}: must be run from ${dir}"
     exit 2
 else
-    set -e
-    alias csx="../../scripts/csx"
-    export PYTHONPATH="../../:${PYTHONPATH}"
-
     echo "removing existing output files"
     rm -rf csx compact bare pretty
     mkdir csx compact bare pretty
 
-    echo "converting CSS stylesheets to CSX "
-    for target in l m s x
-    do
-        csx --optimize --minimize original/${target}/*.css > csx/${target}.csx
-    done
+    cd ../..
+    export PATH=".:${PATH}"
 
-    echo "converting CSX stylesheets to 'compact' CSS"
-    for target in l m s x
+    for name in l m s x
     do
-        csx --compact csx/${target}.csx > compact/${target}.css
-    done
-
-    echo "converting CSX stylesheets to 'bare' CSS"
-    for target in l m s x
-    do
-        csx --bare csx/${target}.csx > bare/${target}.css
-    done
-
-    echo "converting CSX stylesheets to 'pretty' CSS"
-    for target in l m s x
-    do
-        csx --pretty csx/${target}.csx > pretty/${target}.css
+        echo "converting ${name}.css to CSX"
+        csx --aggressive ${dir}/original/${name}/*.css > ${dir}/csx/${name}.csx
+        for style in bare compact pretty
+        do
+            echo "converting ${name}.csx to ${style} CSS"
+            csx --${style} ${dir}/csx/${name}.csx > ${dir}/${style}/${name}.css
+        done
     done
 fi
 
