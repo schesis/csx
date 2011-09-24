@@ -1,10 +1,13 @@
+#s {
+    width: 736px;
+}
+
 #s * {
     font-size: 10px;
     line-height: 20px;
 }
 
-#s p.feed,
-#s #etiol {
+#s p.feed, #s #etiol {
     height: 2.0em;
 }
 
@@ -19,8 +22,7 @@
     padding-left: 16px;
 }
 
-#s p.feed a:focus,
-#s p.feed a:hover {
+#s p.feed a:focus, #s p.feed a:hover {
     background: url(../decor/icon-rss-focus.png) no-repeat left center;
 }
 
@@ -28,8 +30,7 @@
     background: url(../decor/icon-next.gif) no-repeat center center;
 }
 
-#s p.navigation a.next:focus,
-#s p.navigation a.next:hover {
+#s p.navigation a.next:focus, #s p.navigation a.next:hover {
     background: #fff url(../decor/icon-next-focus.gif) no-repeat center center;
 }
 
@@ -41,8 +42,7 @@
     background: url(../decor/icon-previous.gif) no-repeat center center;
 }
 
-#s p.navigation a.previous:focus,
-#s p.navigation a.previous:hover {
+#s p.navigation a.previous:focus, #s p.navigation a.previous:hover {
     background: #fff url(../decor/icon-previous-focus.gif) no-repeat center center;
 }
 
@@ -60,10 +60,10 @@
 
 #s #branding {
     background: url(../decor/slogan.png) no-repeat 288px 0;
+    height: 52px;
 }
 
-#s #branding dt a,
-#s #branding dt img {
+#s #branding dt a, #s #branding dt img {
     line-height: 52px;
 }
 
@@ -101,9 +101,12 @@
     padding: 0 4px;
 }
 
-#s #menu ul li a:focus,
-#s #menu ul li a:hover {
+#s #menu ul li a:focus, #s #menu ul li a:hover {
     background: #bbb url(../decor/menu-selected.png) repeat-x top;
+}
+
+#s #menu ul li strong {
+    background: #eee url(../decor/menu-focus.png) repeat-x top;
 }
 
 #s #menu ul li strong a {
@@ -111,8 +114,7 @@
     padding: 0 4px;
 }
 
-#s #menu ul li strong a:focus,
-#s #menu ul li strong a:hover {
+#s #menu ul li strong a:focus, #s #menu ul li strong a:hover {
     background: #bbb url(../decor/menu-selected.png) repeat-x top;
 }
 
@@ -138,8 +140,7 @@
     padding: 0 4px;
 }
 
-#s #primary,
-#s #secondary {
+#s #primary, #s #secondary {
     padding-bottom: 2.0em;
 }
 
@@ -161,8 +162,7 @@
     width: 438px;
 }
 
-#s #primary.text,
-#s #secondary.text {
+#s #primary.text, #s #secondary.text {
     height: 256px;
     padding: 12px;
 }
@@ -201,8 +201,7 @@
     width: 314px;
 }
 
-#s #primary.text h1,
-#s #primary.text p {
+#s #primary.text h1, #s #primary.text p {
     line-height: 14px;
 }
 
@@ -218,30 +217,32 @@
     line-height: 10px;
 }
 
-#s #primary.text .winner h3,
-#s #primary.text #finalist h3 {
+#s #primary.text .winner h3, #s #primary.text #finalist h3 {
     font-size: 14px;
     line-height: 19px;
-    margin-bottom: 8px;
     margin-left: 4px;
 }
 
-#s #primary.text .winner img,
-#s #primary.text #finalist img {
-    height: 56px;
-}
-
-#s #primary.text .winner ul li,
-#s #primary.text #finalist ul li {
+#s #primary.text .winner ul li, #s #primary.text #finalist ul li {
     margin-left: 4px;
 }
 
 #s #primary.text .winner {
+    margin-bottom: 8px;
     width: 364px;
 }
 
+#s #primary.text .winner h3 {
+    margin-bottom: 8px;
+}
+
 #s #primary.text .winner img {
+    height: 56px;
     margin-left: -64px;
+}
+
+#s #primary.text .winner ul li {
+    line-height: 11px;
 }
 
 #s #primary.text .winner ul li a {
@@ -254,6 +255,7 @@
 
 #s #primary.text #finalist {
     background: #a4a4a4 url(../decor/background-primary-emphasis.jpg) -12px -212px;
+    height: 56px;
     margin-top: 8px;
     width: 304px;
 }
@@ -270,6 +272,10 @@
     right: 12px;
 }
 
+#s #primary.text #finalist img {
+    height: 56px;
+}
+
 #s #primary.text #finalist ul li {
     line-height: 11px;
 }
@@ -284,19 +290,21 @@
 
 #s #secondary {
     background: #b4b4b4 url(../decor/background-secondary.jpg) repeat-y left top;
+    height: 280px;
 }
 
 #s #secondary dl.subject {
     margin-top: -2.0em;
+    padding: 0 8px;
 }
 
 #s #secondary dl.subject dd {
+    margin-left: -8px;
     margin-top: -4.0em;
     padding-left: 8px;
 }
 
-#s #secondary dl.subject dd a,
-#s #secondary dl.subject dd strong {
+#s #secondary dl.subject dd a, #s #secondary dl.subject dd strong {
     margin-left: -8px;
     padding: 0 8px;
 }
@@ -326,10 +334,10 @@
 
 #s #secondary.text {
     padding-right: 20px;
+    width: 256px;
 }
 
-#s #secondary.text h2,
-#s #secondary.text p.description {
+#s #secondary.text h2, #s #secondary.text p.description {
     line-height: 14px;
 }
 
@@ -345,6 +353,7 @@
 
 #s #secondary.text p.newsflash {
     background: #a4a4a4 url(../decor/background-secondary-emphasis.jpg) -12px -12px;
+    line-height: 14px;
     padding: 2px 4px;
 }
 
@@ -402,8 +411,7 @@
     left: 240px;
 }
 
-#s #secondary.text #recent a.more:focus,
-#s #secondary.text #recent a.more:hover {
+#s #secondary.text #recent a.more:focus, #s #secondary.text #recent a.more:hover {
     background: url(../decor/icon-more-focus.png) no-repeat top left;
 }
 
@@ -427,20 +435,15 @@
     width: 736px;
 }
 
-#s.about #menu #sections,
-#s.category #menu #sections {
+#s.about #menu #sections, #s.category #menu #sections {
     width: 736px;
 }
 
-#s.awards #etiol,
-#s.contact #etiol,
-#s.error #etiol {
+#s.awards #etiol, #s.contact #etiol, #s.error #etiol {
     background: #eee url(../decor/foot.png) no-repeat bottom right;
 }
 
-#s.awards #primary.text,
-#s.contact #primary.text,
-#s.error #primary.text {
+#s.awards #primary.text, #s.contact #primary.text, #s.error #primary.text {
     padding-left: 300px;
 }
 
@@ -452,8 +455,7 @@
     width: 736px;
 }
 
-#s.awards #primary .winner img,
-#s.awards #primary #finalist img {
+#s.awards #primary .winner img, #s.awards #primary #finalist img {
     font-size: 8px;
     height: 56px;
     line-height: 10px;
@@ -492,12 +494,13 @@
     padding: 2px 3px;
 }
 
-#s.category #primary.text p.a-z,
-#s.category #primary.text ul {
+#s.category #primary.text p.a-z, #s.category #primary.text ul {
     margin-bottom: 12px;
 }
 
 #s.category #primary.text p.a-z {
+    font-size: 14px;
+    line-height: 14px;
     margin-top: 0px;
 }
 
@@ -519,8 +522,7 @@
     width: 726px;
 }
 
-#s.contact #etiol,
-#s.error #etiol {
+#s.contact #etiol, #s.error #etiol {
     width: 736px;
 }
 
@@ -532,10 +534,7 @@
     background: #b4b4b4 url(../decor/background-exclaim.jpg) no-repeat left top;
 }
 
-#s.tall p.feed,
-#s.tall #branding,
-#s.tall #menu,
-#s.tall #secondary {
+#s.tall p.feed, #s.tall #branding, #s.tall #menu, #s.tall #secondary {
     width: 392px;
 }
 
@@ -543,8 +542,7 @@
     background-image: url(../decor/foot-secondary.png);
 }
 
-#s.tall #contact,
-#s.tall #primary {
+#s.tall #contact, #s.tall #primary {
     width: 336px;
 }
 
@@ -570,12 +568,15 @@
     width: 104px;
 }
 
-#s.tall #menu #sections ul li a,
-#s.tall #menu #sections ul li strong {
+#s.tall #menu #sections ul li a, #s.tall #menu #sections ul li strong {
     width: 88px;
 }
 
 #s.tall #menu #sections ul li a {
+    padding-right: 12px;
+}
+
+#s.tall #menu #sections ul li strong {
     padding-right: 12px;
 }
 

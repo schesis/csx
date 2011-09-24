@@ -31,7 +31,7 @@ ul { list-style: none }
 .tall #menu #sections ul { border-bottom: 1px solid #bbb; float: right }
 .tall #menu #sections ul li a, .tall #menu #sections ul li strong { background: #ddd; border-left: none; border-top: 1px solid #bbb; text-align: right }
 .tall #menu #sections ul li a:focus, .tall #menu #sections ul li a:hover { background: #bbb }
-.tall #menu #sections ul li strong { border: none }
+.tall #menu #sections ul li strong { background: #eee; border: none }
 .tall #menu #sections ul li strong a { background: #eee }
 .tall #menu #sections ul li strong a:focus, .tall #menu #sections ul li strong a:hover { background: #bbb }
 .tall.root #menu #sections ul { border-bottom: none; border-top: 1px solid #bbb }
@@ -40,17 +40,19 @@ ul { list-style: none }
 .wide #contact address.email a:active { color: #fff }
 .wide #contact address.telephone { color: #111 }
 .wide #menu #sections { float: right }
+#branding { left: 0; overflow: hidden; position: absolute; top: 0 }
 #branding dt a { color: #fff; left: 0; letter-spacing: 1px; position: absolute; text-align: center; text-decoration: none; top: 0 }
 #branding dt a img { display: block; z-index: 1 }
 #branding dt a:focus img, #branding dt a:hover img { background: #666 }
 #branding dd { color: #919191; left: 0; overflow: hidden; position: absolute; top: 0; z-index: -1 }
 #contact, #secondary.text { overflow: hidden }
-#contact { right: 0; top: 0 }
+#contact { position: absolute; right: 0; top: 0 }
 #contact address { font-style: normal; position: absolute }
 #contact address.email a { color: #111; text-decoration: none }
 #etiol, #primary { float: right }
 #etiol a, #etiol small { color: #777 }
 #etiol small { display: block; text-align: right }
+#menu { color: #333; float: left }
 #menu h2 { color: #555; font-weight: bolder }
 #menu ul li { display: inline }
 #menu ul li a, #menu ul li strong { float: left }
@@ -61,6 +63,7 @@ ul { list-style: none }
 #menu #sections h2 { border-left: 1px solid #bbb }
 #menu #sections ul li a, #menu #sections ul li strong { border-left: 1px solid #bbb }
 #menu #sections ul li strong a { border: none }
+#menu #subsections { float: left }
 #menu #subsections h2, #menu #subsections ul { float: left }
 #menu #subsections h2 { border-right: 1px solid #bbb }
 #menu #subsections h2 a { color: #555; text-decoration: none }
@@ -68,6 +71,7 @@ ul { list-style: none }
 #menu #subsections h2 a:active { color: #111 }
 #menu #subsections ul li a, #menu #subsections ul li strong { border-right: 1px solid #bbb }
 #primary, #secondary.text, #vc2, #vc3 { position: relative }
+#primary.photo dl { display: block }
 #primary.photo dl dt { text-align: center }
 #primary.photo dl dt a, #primary.photo dl dt img { display: block }
 #primary.photo dl dd { background: #eee; bottom: 0; color: #000; opacity: 0.9; position: absolute; text-align: justify; visibility: hidden }
@@ -75,7 +79,8 @@ ul { list-style: none }
 #primary.photo dl dd a:focus, #primary.photo dl dd a:hover { background: #fff; border: 1px #ccc solid; color: #333 }
 #primary.photo dl dd a:active { border: 1px #aaa solid; color: #111; opacity: 1.0 }
 #primary.photo dl:hover dd { visibility: visible }
-#primary.photo h1 { bottom: 0; color: #555; position: absolute }
+#primary.photo h1 { bottom: 0; color: #555; font-weight: bolder; position: absolute }
+#primary.photo h1 small { color: #777; font-weight: normal; text-decoration: none }
 #primary.photo h1 small a { color: #777; font-weight: normal; text-decoration: none }
 #primary.photo h1 small a:focus, #primary.photo h1 small a:hover { color: #333; text-decoration: underline }
 #primary.photo h1 small a:active { color: #111 }
@@ -106,6 +111,7 @@ ul { list-style: none }
 #primary.text .winner ul li a:focus, #primary.text .winner ul li a:hover { text-decoration: underline }
 #primary.text #finalist { float: left }
 #primary.text #finalist h3 a { position: absolute }
+#secondary.photo dd { color: #777 }
 #secondary.photo dd a { color: #777; text-decoration: none }
 #secondary.photo dd a:focus, #secondary.photo dd a:hover { color: #333; text-decoration: underline }
 #secondary.photo dd a:active { color: #111 }
@@ -113,29 +119,30 @@ ul { list-style: none }
 #secondary.text h2 { color: #555; font-weight: normal }
 #secondary.text p.description { text-align: justify }
 #secondary.text p.newsflash a { line-height: 1em }
-#secondary.text #recent { bottom: 0 }
-#secondary.text #recent a { position: absolute }
+#secondary.text #recent { bottom: 0; position: absolute }
+#secondary.text #recent a { display: block; position: absolute }
 #secondary.text #recent a img { display: block }
 #secondary.text #recent a.index-2 { left: 0 }
 #secondary.text #recent a.index-2:focus, #secondary.text #recent a.index-2:hover, #secondary.text #recent a.index-3:focus, #secondary.text #recent a.index-3:hover, #secondary.text #recent a.index-4:focus, #secondary.text #recent a.index-4:hover, #secondary.text #recent a.index-5:focus, #secondary.text #recent a.index-5:hover { background: #bbb; opacity: 0.8 }
 #secondary.text #recent a.more:focus img, #secondary.text #recent a.more:hover img, #secondary.text #recent a.more:active img { visibility: hidden }
-#secondary.thumbnails dl.subject { bottom: 0; float: right; right: 0; top: auto }
-#secondary.thumbnails dl.subject dt a, #secondary.thumbnails dl.subject dd a { text-decoration: none }
+#secondary.thumbnails dl.subject { bottom: 0; color: #777; float: right; right: 0; top: auto }
 #secondary.thumbnails dl.subject dt strong, #secondary.thumbnails dl.subject dd strong { font-weight: bolder }
-#secondary.thumbnails dl.subject dt { text-align: right }
-#secondary.thumbnails dl.subject dt a { color: #777; font-weight: normal }
+#secondary.thumbnails dl.subject dt { color: #777; font-weight: normal; text-align: right; text-decoration: none }
+#secondary.thumbnails dl.subject dt a { color: #777; font-weight: normal; text-decoration: none }
 #secondary.thumbnails dl.subject dt a:focus, #secondary.thumbnails dl.subject dt a:hover { color: #333; text-decoration: underline }
 #secondary.thumbnails dl.subject dt a:active { color: #111 }
 #secondary.thumbnails dl.subject dt strong { color: #999 }
 #secondary.thumbnails dl.subject dd { background: #eee; opacity: 0.8; visibility: hidden }
 #secondary.thumbnails dl.subject dd a, #secondary.thumbnails dl.subject dd a:focus, #secondary.thumbnails dl.subject dd a:hover { color: #000 }
 #secondary.thumbnails dl.subject dd a, #secondary.thumbnails dl.subject dd strong { display: block }
+#secondary.thumbnails dl.subject dd a { text-decoration: none }
 #secondary.thumbnails dl.subject dd a:focus, #secondary.thumbnails dl.subject dd a:hover { background: #fff }
 #secondary.thumbnails dl.subject dd a:active { background: #ddd }
 #secondary.thumbnails dl.subject dd strong { color: #555 }
 #secondary.thumbnails dl.subject:hover dd { visibility: visible }
 #secondary.thumbnails h1, #secondary.thumbnails h2 { display: none }
 #secondary.thumbnails p.navigation { display: block; float: left }
+#secondary.thumbnails p.thumbnails { float: left }
 #secondary.thumbnails p.thumbnails a:focus img, #secondary.thumbnails p.thumbnails a:hover img { background: #bbb; opacity: 0.8 }
 #secondary.thumbnails p.thumbnails img { float: left; text-align: center }
 #vc1 { display: table; overflow: visible }

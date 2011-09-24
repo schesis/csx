@@ -1,4 +1,5 @@
 #l {
+    width: 1104px;
     * {
         font-size: 14px;
         line-height: 30px;
@@ -16,8 +17,7 @@
             padding-left: 24px;
         }
         a:focus, a:hover {
-            background:
-                url(../decor/icon-rss-focus.png) no-repeat left center;
+            background: url(../decor/icon-rss-focus.png) no-repeat left center;
         }
     }
     p.navigation {
@@ -25,36 +25,30 @@
             background: url(../decor/icon-next.gif) no-repeat center center;
         }
         a.next:focus, a.next:hover {
-            background:
-                #fff url(../decor/icon-next-focus.gif) no-repeat center center;
+            background: #fff url(../decor/icon-next-focus.gif) no-repeat center center;
         }
         a.next:active {
-            background:
-                #ccc url(../decor/icon-next-active.gif) no-repeat center center;
+            background: #ccc url(../decor/icon-next-active.gif) no-repeat center center;
         }
         a.previous {
-            background:
-                url(../decor/icon-previous.gif) no-repeat center center;
+            background: url(../decor/icon-previous.gif) no-repeat center center;
         }
         a.previous:focus, a.previous:hover {
-            background:
-                #fff url(../decor/icon-previous-focus.gif) no-repeat center center;
+            background: #fff url(../decor/icon-previous-focus.gif) no-repeat center center;
         }
         a.previous:active {
-            background:
-                #ccc url(../decor/icon-previous-active.gif) no-repeat center center;
+            background: #ccc url(../decor/icon-previous-active.gif) no-repeat center center;
         }
         del.next {
-            background:
-                url(../decor/icon-next-disabled.gif) no-repeat center center;
+            background: url(../decor/icon-next-disabled.gif) no-repeat center center;
         }
         del.previous {
-            background:
-                url(../decor/icon-previous-disabled.gif) no-repeat center center;
+            background: url(../decor/icon-previous-disabled.gif) no-repeat center center;
         }
     }
     #branding {
         background: url(../decor/slogan.png) no-repeat 432px 0;
+        height: 78px;
         dt {
             a, img {
                 line-height: 78px;
@@ -86,23 +80,20 @@
         ul {
             li {
                 a {
-                    background:
-                        #ddd url(../decor/head.png) no-repeat center top;
+                    background: #ddd url(../decor/head.png) no-repeat center top;
                     padding: 0 6px;
                 }
                 a:focus, a:hover {
-                    background:
-                        #bbb url(../decor/menu-selected.png) repeat-x top;
+                    background: #bbb url(../decor/menu-selected.png) repeat-x top;
                 }
                 strong {
+                    background: #eee url(../decor/menu-focus.png) repeat-x top;
                     a {
-                        background:
-                            #eee url(../decor/menu-focus.png) repeat-x top;
+                        background: #eee url(../decor/menu-focus.png) repeat-x top;
                         padding: 0 6px;
                     }
                     a:focus, a:hover {
-                        background:
-                            #bbb url(../decor/menu-selected.png) repeat-x top;
+                        background: #bbb url(../decor/menu-selected.png) repeat-x top;
                     }
                 }
             }
@@ -196,32 +187,35 @@
             h3 {
                 font-size: 22px;
                 line-height: 29px;
-                margin-bottom: 12px;
                 margin-left: 6px;
-            }
-            img {
-                height: 84px;
             }
             ul li {
                 margin-left: 6px;
             }
         }
         .winner {
+            margin-bottom: 12px;
             width: 546px;
+            h3 {
+                margin-bottom: 12px;
+            }
             img {
+                height: 84px;
                 margin-left: -96px;
             }
-            ul li a {
+            ul li {
                 line-height: 17px;
+                a {
+                    line-height: 17px;
+                }
             }
         }
         #colsa {
-            background:
-                #a4a4a4 url(../decor/background-primary-emphasis.jpg) -108px -114px;
+            background: #a4a4a4 url(../decor/background-primary-emphasis.jpg) -108px -114px;
         }
         #finalist {
-            background:
-                #a4a4a4 url(../decor/background-primary-emphasis.jpg) -18px -318px;
+            background: #a4a4a4 url(../decor/background-primary-emphasis.jpg) -18px -318px;
+            height: 84px;
             margin-top: 12px;
             width: 456px;
             h3 {
@@ -233,25 +227,28 @@
                     right: 18px;
                 }
             }
+            img {
+                height: 84px;
+            }
             ul li {
                 line-height: 17px;
             }
         }
         #nikon_ae {
-            background:
-                #a4a4a4 url(../decor/background-primary-emphasis.jpg) -108px -18px;
+            background: #a4a4a4 url(../decor/background-primary-emphasis.jpg) -108px -18px;
         }
         #times_tabasco {
-            background:
-                #a4a4a4 url(../decor/background-primary-emphasis.jpg) -108px -210px;
+            background: #a4a4a4 url(../decor/background-primary-emphasis.jpg) -108px -210px;
         }
     }
     #secondary {
-        background:
-            #b4b4b4 url(../decor/background-secondary.jpg) repeat-y left top;
+        background: #b4b4b4 url(../decor/background-secondary.jpg) repeat-y left top;
+        height: 420px;
         dl.subject {
             margin-top: -2.143em;
+            padding: 0 12px;
             dd {
+                margin-left: -12px;
                 margin-top: -4.286em;
                 padding-left: 12px;
                 a, strong {
@@ -261,8 +258,7 @@
             }
         }
         p.thumbnails {
-            background:
-                #b4b4b4 url(../decor/background-secondary.jpg) repeat-y top left;
+            background: #b4b4b4 url(../decor/background-secondary.jpg) repeat-y top left;
             height: 420px;
             width: 432px;
             img {
@@ -285,6 +281,7 @@
     }
     #secondary.text {
         padding-right: 30px;
+        width: 384px;
         h2, p.description {
             line-height: 22px;
         }
@@ -297,8 +294,8 @@
             margin-top: 0;
         }
         p.newsflash {
-            background:
-                #a4a4a4 url(../decor/background-secondary-emphasis.jpg) -18px -18px;
+            background: #a4a4a4 url(../decor/background-secondary-emphasis.jpg) -18px -18px;
+            line-height: 22px;
             padding: 2px 6px;
             strong {
                 line-height: 22px;
@@ -335,17 +332,14 @@
                 left: 270px;
             }
             a.more {
-                background:
-                    url(../decor/background-secondary-emphasis.jpg) -378px -318px;
+                background: url(../decor/background-secondary-emphasis.jpg) -378px -318px;
                 left: 360px;
             }
             a.more:focus, a.more:hover {
-                background:
-                    url(../decor/icon-more-focus.png) no-repeat top left;
+                background: url(../decor/icon-more-focus.png) no-repeat top left;
             }
             a.more:active {
-                background:
-                    url(../decor/icon-more-active.png) no-repeat top left;
+                background: url(../decor/icon-more-active.png) no-repeat top left;
             }
             h2 {
                 margin-bottom: 114px;
@@ -397,8 +391,7 @@
         }
     }
     #primary.text {
-        background:
-            #b4b4b4 url(../decor/background-photo-tabasco.jpg) no-repeat left top;
+        background: #b4b4b4 url(../decor/background-photo-tabasco.jpg) no-repeat left top;
     }
 }
 
@@ -435,6 +428,8 @@
             margin-bottom: 18px;
         }
         p.a-z {
+            font-size: 22px;
+            line-height: 22px;
             margin-top: 0px;
             a {
                 font-size: 22px;
@@ -463,13 +458,11 @@
 }
 
 #l.contact #primary.text {
-    background:
-        #b4b4b4 url(../decor/background-photo-soldier.jpg) no-repeat left top;
+    background: #b4b4b4 url(../decor/background-photo-soldier.jpg) no-repeat left top;
 }
 
 #l.error #primary.text {
-    background:
-        #b4b4b4 url(../decor/background-exclaim.jpg) no-repeat left top;
+    background: #b4b4b4 url(../decor/background-exclaim.jpg) no-repeat left top;
 }
 
 #l.tall {
@@ -493,8 +486,7 @@
         }
     }
     #menu {
-        background:
-            #ddd url(../decor/head-secondary.png) no-repeat center top;
+        background: #ddd url(../decor/head-secondary.png) no-repeat center top;
         #sections {
             left: 432px;
             width: 156px;
@@ -505,8 +497,11 @@
                 a {
                     padding-right: 18px;
                 }
-                strong a {
+                strong {
                     padding-right: 18px;
+                    a {
+                        padding-right: 18px;
+                    }
                 }
             }
         }
@@ -524,8 +519,7 @@
             padding-left: 18px;
         }
         p.navigation {
-            background:
-                #eee url(../decor/foot-primary.png) no-repeat bottom right;
+            background: #eee url(../decor/foot-primary.png) no-repeat bottom right;
             width: 490px;
         }
     }
@@ -539,14 +533,12 @@
         }
     }
     #secondary.thumbnails p.navigation {
-        background:
-            #eee url(../decor/foot-secondary.png) no-repeat bottom left;
+        background: #eee url(../decor/foot-secondary.png) no-repeat bottom left;
     }
 }
 
 #l.tall.root #menu #sections ul {
-    background:
-        #ccc url(../decor/background-secondary.jpg) no-repeat right bottom;
+    background: #ccc url(../decor/background-secondary.jpg) no-repeat right bottom;
     height: 419px;
 }
 
@@ -569,8 +561,7 @@
             }
         }
         address.telephone {
-            background:
-                url(../decor/slogan-extend-cap.png) no-repeat right top;
+            background: url(../decor/slogan-extend-cap.png) no-repeat right top;
             height: 62px;
             padding-top: 16px;
         }

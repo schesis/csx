@@ -1,10 +1,13 @@
+#m {
+    width: 920px;
+}
+
 #m * {
     font-size: 12px;
     line-height: 25px;
 }
 
-#m p.feed,
-#m #etiol {
+#m p.feed, #m #etiol {
     height: 2.083em;
 }
 
@@ -20,8 +23,7 @@
     padding-left: 20px;
 }
 
-#m p.feed a:focus,
-#m p.feed a:hover {
+#m p.feed a:focus, #m p.feed a:hover {
     background: url(../decor/icon-rss-focus.png) no-repeat left center;
 }
 
@@ -29,8 +31,7 @@
     background: url(../decor/icon-next.gif) no-repeat center center;
 }
 
-#m p.navigation a.next:focus,
-#m p.navigation a.next:hover {
+#m p.navigation a.next:focus, #m p.navigation a.next:hover {
     background: #fff url(../decor/icon-next-focus.gif) no-repeat center center;
 }
 
@@ -42,8 +43,7 @@
     background: url(../decor/icon-previous.gif) no-repeat center center;
 }
 
-#m p.navigation a.previous:focus,
-#m p.navigation a.previous:hover {
+#m p.navigation a.previous:focus, #m p.navigation a.previous:hover {
     background: #fff url(../decor/icon-previous-focus.gif) no-repeat center center;
 }
 
@@ -61,10 +61,10 @@
 
 #m #branding {
     background: url(../decor/slogan.png) no-repeat 360px 0;
+    height: 65px;
 }
 
-#m #branding dt a,
-#m #branding dt img {
+#m #branding dt a, #m #branding dt img {
     line-height: 65px;
 }
 
@@ -102,9 +102,12 @@
     padding: 0 5px;
 }
 
-#m #menu ul li a:focus,
-#m #menu ul li a:hover {
+#m #menu ul li a:focus, #m #menu ul li a:hover {
     background: #bbb url(../decor/menu-selected.png) repeat-x top;
+}
+
+#m #menu ul li strong {
+    background: #eee url(../decor/menu-focus.png) repeat-x top;
 }
 
 #m #menu ul li strong a {
@@ -112,8 +115,7 @@
     padding: 0 5px;
 }
 
-#m #menu ul li strong a:focus,
-#m #menu ul li strong a:hover {
+#m #menu ul li strong a:focus, #m #menu ul li strong a:hover {
     background: #bbb url(../decor/menu-selected.png) repeat-x top;
 }
 
@@ -139,8 +141,7 @@
     padding: 0 5px;
 }
 
-#m #primary,
-#m #secondary {
+#m #primary, #m #secondary {
     padding-bottom: 2.083em;
 }
 
@@ -162,8 +163,7 @@
     width: 548px;
 }
 
-#m #primary.text,
-#m #secondary.text {
+#m #primary.text, #m #secondary.text {
     height: 320px;
     padding: 15px;
 }
@@ -202,8 +202,7 @@
     width: 392px;
 }
 
-#m #primary.text h1,
-#m #primary.text p {
+#m #primary.text h1, #m #primary.text p {
     line-height: 18px;
 }
 
@@ -219,30 +218,32 @@
     line-height: 12px;
 }
 
-#m #primary.text .winner h3,
-#m #primary.text #finalist h3 {
+#m #primary.text .winner h3, #m #primary.text #finalist h3 {
     font-size: 18px;
     line-height: 24px;
-    margin-bottom: 10px;
     margin-left: 5px;
 }
 
-#m #primary.text .winner img,
-#m #primary.text #finalist img {
-    height: 70px;
-}
-
-#m #primary.text .winner ul li,
-#m #primary.text #finalist ul li {
+#m #primary.text .winner ul li, #m #primary.text #finalist ul li {
     margin-left: 5px;
 }
 
 #m #primary.text .winner {
+    margin-bottom: 10px;
     width: 455px;
 }
 
+#m #primary.text .winner h3 {
+    margin-bottom: 10px;
+}
+
 #m #primary.text .winner img {
+    height: 70px;
     margin-left: -80px;
+}
+
+#m #primary.text .winner ul li {
+    line-height: 14px;
 }
 
 #m #primary.text .winner ul li a {
@@ -255,6 +256,7 @@
 
 #m #primary.text #finalist {
     background: #a4a4a4 url(../decor/background-primary-emphasis.jpg) -15px -265px;
+    height: 70px;
     margin-top: 10px;
     width: 380px;
 }
@@ -271,6 +273,10 @@
     right: 15px;
 }
 
+#m #primary.text #finalist img {
+    height: 70px;
+}
+
 #m #primary.text #finalist ul li {
     line-height: 14px;
 }
@@ -285,19 +291,21 @@
 
 #m #secondary {
     background: #b4b4b4 url(../decor/background-secondary.jpg) repeat-y left top;
+    height: 350px;
 }
 
 #m #secondary dl.subject {
     margin-top: -2.083em;
+    padding: 0 10px;
 }
 
 #m #secondary dl.subject dd {
+    margin-left: -10px;
     margin-top: -4.16em;
     padding-left: 10px;
 }
 
-#m #secondary dl.subject dd a,
-#m #secondary dl.subject dd strong {
+#m #secondary dl.subject dd a, #m #secondary dl.subject dd strong {
     margin-left: -10px;
     padding: 0 10px;
 }
@@ -327,10 +335,10 @@
 
 #m #secondary.text {
     padding-right: 25px;
+    width: 320px;
 }
 
-#m #secondary.text h2,
-#m #secondary.text p.description {
+#m #secondary.text h2, #m #secondary.text p.description {
     line-height: 18px;
 }
 
@@ -346,6 +354,7 @@
 
 #m #secondary.text p.newsflash {
     background: #a4a4a4 url(../decor/background-secondary-emphasis.jpg) -15px -15px;
+    line-height: 18px;
     padding: 2px 5px;
 }
 
@@ -403,8 +412,7 @@
     left: 300px;
 }
 
-#m #secondary.text #recent a.more:focus,
-#m #secondary.text #recent a.more:hover {
+#m #secondary.text #recent a.more:focus, #m #secondary.text #recent a.more:hover {
     background: url(../decor/icon-more-focus.png) no-repeat top left;
 }
 
@@ -428,20 +436,15 @@
     width: 920px;
 }
 
-#m.about #menu #sections,
-#m.category #menu #sections {
+#m.about #menu #sections, #m.category #menu #sections {
     width: 920px;
 }
 
-#m.awards #etiol,
-#m.contact #etiol,
-#m.error #etiol {
+#m.awards #etiol, #m.contact #etiol, #m.error #etiol {
     background: #eee url(../decor/foot.png) no-repeat bottom right;
 }
 
-#m.awards #primary.text,
-#m.contact #primary.text,
-#m.error #primary.text {
+#m.awards #primary.text, #m.contact #primary.text, #m.error #primary.text {
     padding-left: 375px;
 }
 
@@ -453,8 +456,7 @@
     width: 920px;
 }
 
-#m.awards #primary .winner img,
-#m.awards #primary #finalist img {
+#m.awards #primary .winner img, #m.awards #primary #finalist img {
     font-size: 10px;
     height: 70px;
     line-height: 12px;
@@ -493,12 +495,13 @@
     padding: 2px 4px;
 }
 
-#m.category #primary.text p.a-z,
-#m.category #primary.text ul {
+#m.category #primary.text p.a-z, #m.category #primary.text ul {
     margin-bottom: 15px;
 }
 
 #m.category #primary.text p.a-z {
+    font-size: 18px;
+    line-height: 18px;
     margin-top: 0px;
 }
 
@@ -520,8 +523,7 @@
     width: 908px;
 }
 
-#m.contact #etiol,
-#m.error #etiol {
+#m.contact #etiol, #m.error #etiol {
     width: 920px;
 }
 
@@ -533,10 +535,7 @@
     background: #b4b4b4 url(../decor/background-exclaim.jpg) no-repeat left top;
 }
 
-#m.tall p.feed,
-#m.tall #branding,
-#m.tall #menu,
-#m.tall #secondary {
+#m.tall p.feed, #m.tall #branding, #m.tall #menu, #m.tall #secondary {
     width: 490px;
 }
 
@@ -544,8 +543,7 @@
     background-image: url(../decor/foot-secondary.png);
 }
 
-#m.tall #contact,
-#m.tall #primary {
+#m.tall #contact, #m.tall #primary {
     width: 420px;
 }
 
@@ -571,12 +569,15 @@
     width: 130px;
 }
 
-#m.tall #menu #sections ul li a,
-#m.tall #menu #sections ul li strong {
+#m.tall #menu #sections ul li a, #m.tall #menu #sections ul li strong {
     width: 110px;
 }
 
 #m.tall #menu #sections ul li a {
+    padding-right: 15px;
+}
+
+#m.tall #menu #sections ul li strong {
     padding-right: 15px;
 }
 

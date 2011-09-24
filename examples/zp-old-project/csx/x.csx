@@ -154,6 +154,7 @@ ul {
                     background: #bbb;
                 }
                 strong {
+                    background: #eee;
                     border: none;
                     a {
                         background: #eee;
@@ -195,6 +196,10 @@ ul {
 }
 
 #branding {
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
     dt {
         a {
             color: #fff;
@@ -230,6 +235,7 @@ ul {
 }
 
 #contact {
+    position: absolute;
     right: 0;
     top: 0;
     address {
@@ -257,6 +263,8 @@ ul {
 }
 
 #menu {
+    color: #333;
+    float: left;
     h2 {
         color: #555;
         font-weight: bolder;
@@ -294,6 +302,7 @@ ul {
         }
     }
     #subsections {
+        float: left;
         h2, ul {
             float: left;
         }
@@ -325,6 +334,7 @@ ul {
 
 #primary.photo {
     dl {
+        display: block;
         dt {
             text-align: center;
             a, img {
@@ -363,8 +373,12 @@ ul {
     h1 {
         bottom: 0;
         color: #555;
+        font-weight: bolder;
         position: absolute;
         small {
+            color: #777;
+            font-weight: normal;
+            text-decoration: none;
             a {
                 color: #777;
                 font-weight: normal;
@@ -498,6 +512,7 @@ ul {
 
 #secondary.photo {
     dd {
+        color: #777;
         a {
             color: #777;
             text-decoration: none;
@@ -528,7 +543,9 @@ ul {
     }
     #recent {
         bottom: 0;
+        position: absolute;
         a {
+            display: block;
             position: absolute;
             img {
                 display: block;
@@ -559,22 +576,24 @@ ul {
 #secondary.thumbnails {
     dl.subject {
         bottom: 0;
+        color: #777;
         float: right;
         right: 0;
         top: auto;
         dt, dd {
-            a {
-                text-decoration: none;
-            }
             strong {
                 font-weight: bolder;
             }
         }
         dt {
+            color: #777;
+            font-weight: normal;
             text-align: right;
+            text-decoration: none;
             a {
                 color: #777;
                 font-weight: normal;
+                text-decoration: none;
             }
             a:focus, a:hover {
                 color: #333;
@@ -596,6 +615,9 @@ ul {
             }
             a, strong {
                 display: block;
+            }
+            a {
+                text-decoration: none;
             }
             a:focus, a:hover {
                 background: #fff;
@@ -619,6 +641,7 @@ ul {
         float: left;
     }
     p.thumbnails {
+        float: left;
         a:focus, a:hover {
             img {
                 background: #bbb;

@@ -1,10 +1,13 @@
+#l {
+    width: 1104px;
+}
+
 #l * {
     font-size: 14px;
     line-height: 30px;
 }
 
-#l p.feed,
-#l #etiol {
+#l p.feed, #l #etiol {
     height: 2.143em;
 }
 
@@ -20,8 +23,7 @@
     padding-left: 24px;
 }
 
-#l p.feed a:focus,
-#l p.feed a:hover {
+#l p.feed a:focus, #l p.feed a:hover {
     background: url(../decor/icon-rss-focus.png) no-repeat left center;
 }
 
@@ -29,8 +31,7 @@
     background: url(../decor/icon-next.gif) no-repeat center center;
 }
 
-#l p.navigation a.next:focus,
-#l p.navigation a.next:hover {
+#l p.navigation a.next:focus, #l p.navigation a.next:hover {
     background: #fff url(../decor/icon-next-focus.gif) no-repeat center center;
 }
 
@@ -42,8 +43,7 @@
     background: url(../decor/icon-previous.gif) no-repeat center center;
 }
 
-#l p.navigation a.previous:focus,
-#l p.navigation a.previous:hover {
+#l p.navigation a.previous:focus, #l p.navigation a.previous:hover {
     background: #fff url(../decor/icon-previous-focus.gif) no-repeat center center;
 }
 
@@ -61,10 +61,10 @@
 
 #l #branding {
     background: url(../decor/slogan.png) no-repeat 432px 0;
+    height: 78px;
 }
 
-#l #branding dt a,
-#l #branding dt img {
+#l #branding dt a, #l #branding dt img {
     line-height: 78px;
 }
 
@@ -102,9 +102,12 @@
     padding: 0 6px;
 }
 
-#l #menu ul li a:focus,
-#l #menu ul li a:hover {
+#l #menu ul li a:focus, #l #menu ul li a:hover {
     background: #bbb url(../decor/menu-selected.png) repeat-x top;
+}
+
+#l #menu ul li strong {
+    background: #eee url(../decor/menu-focus.png) repeat-x top;
 }
 
 #l #menu ul li strong a {
@@ -112,8 +115,7 @@
     padding: 0 6px;
 }
 
-#l #menu ul li strong a:focus,
-#l #menu ul li strong a:hover {
+#l #menu ul li strong a:focus, #l #menu ul li strong a:hover {
     background: #bbb url(../decor/menu-selected.png) repeat-x top;
 }
 
@@ -139,8 +141,7 @@
     padding: 0 6px;
 }
 
-#l #primary,
-#l #secondary {
+#l #primary, #l #secondary {
     padding-bottom: 2.143em;
 }
 
@@ -162,8 +163,7 @@
     width: 658px;
 }
 
-#l #primary.text,
-#l #secondary.text {
+#l #primary.text, #l #secondary.text {
     height: 384px;
     padding: 18px;
 }
@@ -202,8 +202,7 @@
     width: 470px;
 }
 
-#l #primary.text h1,
-#l #primary.text p {
+#l #primary.text h1, #l #primary.text p {
     line-height: 22px;
 }
 
@@ -219,30 +218,32 @@
     line-height: 14px;
 }
 
-#l #primary.text .winner h3,
-#l #primary.text #finalist h3 {
+#l #primary.text .winner h3, #l #primary.text #finalist h3 {
     font-size: 22px;
     line-height: 29px;
-    margin-bottom: 12px;
     margin-left: 6px;
 }
 
-#l #primary.text .winner img,
-#l #primary.text #finalist img {
-    height: 84px;
-}
-
-#l #primary.text .winner ul li,
-#l #primary.text #finalist ul li {
+#l #primary.text .winner ul li, #l #primary.text #finalist ul li {
     margin-left: 6px;
 }
 
 #l #primary.text .winner {
+    margin-bottom: 12px;
     width: 546px;
 }
 
+#l #primary.text .winner h3 {
+    margin-bottom: 12px;
+}
+
 #l #primary.text .winner img {
+    height: 84px;
     margin-left: -96px;
+}
+
+#l #primary.text .winner ul li {
+    line-height: 17px;
 }
 
 #l #primary.text .winner ul li a {
@@ -255,6 +256,7 @@
 
 #l #primary.text #finalist {
     background: #a4a4a4 url(../decor/background-primary-emphasis.jpg) -18px -318px;
+    height: 84px;
     margin-top: 12px;
     width: 456px;
 }
@@ -271,6 +273,10 @@
     right: 18px;
 }
 
+#l #primary.text #finalist img {
+    height: 84px;
+}
+
 #l #primary.text #finalist ul li {
     line-height: 17px;
 }
@@ -285,19 +291,21 @@
 
 #l #secondary {
     background: #b4b4b4 url(../decor/background-secondary.jpg) repeat-y left top;
+    height: 420px;
 }
 
 #l #secondary dl.subject {
     margin-top: -2.143em;
+    padding: 0 12px;
 }
 
 #l #secondary dl.subject dd {
+    margin-left: -12px;
     margin-top: -4.286em;
     padding-left: 12px;
 }
 
-#l #secondary dl.subject dd a,
-#l #secondary dl.subject dd strong {
+#l #secondary dl.subject dd a, #l #secondary dl.subject dd strong {
     margin-left: -12px;
     padding: 0 12px;
 }
@@ -327,10 +335,10 @@
 
 #l #secondary.text {
     padding-right: 30px;
+    width: 384px;
 }
 
-#l #secondary.text h2,
-#l #secondary.text p.description {
+#l #secondary.text h2, #l #secondary.text p.description {
     line-height: 22px;
 }
 
@@ -346,6 +354,7 @@
 
 #l #secondary.text p.newsflash {
     background: #a4a4a4 url(../decor/background-secondary-emphasis.jpg) -18px -18px;
+    line-height: 22px;
     padding: 2px 6px;
 }
 
@@ -403,8 +412,7 @@
     left: 360px;
 }
 
-#l #secondary.text #recent a.more:focus,
-#l #secondary.text #recent a.more:hover {
+#l #secondary.text #recent a.more:focus, #l #secondary.text #recent a.more:hover {
     background: url(../decor/icon-more-focus.png) no-repeat top left;
 }
 
@@ -428,20 +436,15 @@
     width: 1104px;
 }
 
-#l.about #menu #sections,
-#l.category #menu #sections {
+#l.about #menu #sections, #l.category #menu #sections {
     width: 1104px;
 }
 
-#l.awards #etiol,
-#l.contact #etiol,
-#l.error #etiol {
+#l.awards #etiol, #l.contact #etiol, #l.error #etiol {
     background: #eee url(../decor/foot.png) no-repeat bottom right;
 }
 
-#l.awards #primary.text,
-#l.contact #primary.text,
-#l.error #primary.text {
+#l.awards #primary.text, #l.contact #primary.text, #l.error #primary.text {
     padding-left: 450px;
 }
 
@@ -453,8 +456,7 @@
     width: 1104px;
 }
 
-#l.awards #primary .winner img,
-#l.awards #primary #finalist img {
+#l.awards #primary .winner img, #l.awards #primary #finalist img {
     font-size: 12px;
     height: 84px;
     line-height: 14px;
@@ -493,12 +495,13 @@
     padding: 2px 5px;
 }
 
-#l.category #primary.text p.a-z,
-#l.category #primary.text ul {
+#l.category #primary.text p.a-z, #l.category #primary.text ul {
     margin-bottom: 18px;
 }
 
 #l.category #primary.text p.a-z {
+    font-size: 22px;
+    line-height: 22px;
     margin-top: 0px;
 }
 
@@ -520,8 +523,7 @@
     width: 1090px;
 }
 
-#l.contact #etiol,
-#l.error #etiol {
+#l.contact #etiol, #l.error #etiol {
     width: 1104px;
 }
 
@@ -533,10 +535,7 @@
     background: #b4b4b4 url(../decor/background-exclaim.jpg) no-repeat left top;
 }
 
-#l.tall p.feed,
-#l.tall #branding,
-#l.tall #menu,
-#l.tall #secondary {
+#l.tall p.feed, #l.tall #branding, #l.tall #menu, #l.tall #secondary {
     width: 588px;
 }
 
@@ -544,8 +543,7 @@
     background-image: url(../decor/foot-secondary.png);
 }
 
-#l.tall #contact,
-#l.tall #primary {
+#l.tall #contact, #l.tall #primary {
     width: 504px;
 }
 
@@ -571,12 +569,15 @@
     width: 156px;
 }
 
-#l.tall #menu #sections ul li a,
-#l.tall #menu #sections ul li strong {
+#l.tall #menu #sections ul li a, #l.tall #menu #sections ul li strong {
     width: 132px;
 }
 
 #l.tall #menu #sections ul li a {
+    padding-right: 18px;
+}
+
+#l.tall #menu #sections ul li strong {
     padding-right: 18px;
 }
 

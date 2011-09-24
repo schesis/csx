@@ -5,14 +5,11 @@
     padding: 0;
 }
 
-html,
-body,
-#vc1 {
+html, body, #vc1 {
     height: 100%;
 }
 
-html,
-body {
+html, body {
     background: #555;
     margin: auto;
 }
@@ -32,27 +29,20 @@ div#secondary.text div#recent h2 {
     margin-top: 0;
 }
 
-p.feed a,
-p.navigation a,
-#etiol a {
+p.feed a, p.navigation a, #etiol a {
     text-decoration: none;
 }
 
-p.feed a:focus,
-p.feed a:hover,
-#etiol a:focus,
-#etiol a:hover {
+p.feed a:focus, p.feed a:hover, #etiol a:focus, #etiol a:hover {
     color: #333;
     text-decoration: underline;
 }
 
-p.feed a:active,
-#etiol a:active {
+p.feed a:active, #etiol a:active {
     color: #111;
 }
 
-p.feed,
-#secondary {
+p.feed, #secondary {
     float: left;
 }
 
@@ -65,13 +55,11 @@ p.feed a img {
     display: none;
 }
 
-p.navigation a img,
-p.navigation del img {
+p.navigation a img, p.navigation del img {
     visibility: hidden;
 }
 
-p.navigation a:focus,
-p.navigation a:hover {
+p.navigation a:focus, p.navigation a:hover {
     outline: #ccc 1px solid;
 }
 
@@ -91,8 +79,7 @@ ul {
     display: none;
 }
 
-.awards #primary.text a:focus img,
-.awards #primary.text a:hover img {
+.awards #primary.text a:focus img, .awards #primary.text a:hover img {
     background: #bbb;
     opacity: 0.8;
 }
@@ -118,8 +105,7 @@ ul {
     text-decoration: none;
 }
 
-.category #primary.text p.a-z a:focus,
-.category #primary.text p.a-z a:hover {
+.category #primary.text p.a-z a:focus, .category #primary.text p.a-z a:hover {
     text-decoration: underline;
 }
 
@@ -127,8 +113,7 @@ ul {
     left: 0;
 }
 
-.tall #contact address.email a:focus,
-.tall #contact address.email a:hover {
+.tall #contact address.email a:focus, .tall #contact address.email a:hover {
     text-decoration: underline;
 }
 
@@ -155,20 +140,19 @@ ul {
     float: right;
 }
 
-.tall #menu #sections ul li a,
-.tall #menu #sections ul li strong {
+.tall #menu #sections ul li a, .tall #menu #sections ul li strong {
     background: #ddd;
     border-left: none;
     border-top: 1px solid #bbb;
     text-align: right;
 }
 
-.tall #menu #sections ul li a:focus,
-.tall #menu #sections ul li a:hover {
+.tall #menu #sections ul li a:focus, .tall #menu #sections ul li a:hover {
     background: #bbb;
 }
 
 .tall #menu #sections ul li strong {
+    background: #eee;
     border: none;
 }
 
@@ -190,8 +174,7 @@ ul {
     right: 0;
 }
 
-.wide #contact address.email a:focus,
-.wide #contact address.email a:hover {
+.wide #contact address.email a:focus, .wide #contact address.email a:hover {
     color: #ddd;
 }
 
@@ -205,6 +188,13 @@ ul {
 
 .wide #menu #sections {
     float: right;
+}
+
+#branding {
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
 }
 
 #branding dt a {
@@ -222,8 +212,7 @@ ul {
     z-index: 1;
 }
 
-#branding dt a:focus img,
-#branding dt a:hover img {
+#branding dt a:focus img, #branding dt a:hover img {
     background: #666;
 }
 
@@ -236,12 +225,12 @@ ul {
     z-index: -1;
 }
 
-#contact,
-#secondary.text {
+#contact, #secondary.text {
     overflow: hidden;
 }
 
 #contact {
+    position: absolute;
     right: 0;
     top: 0;
 }
@@ -256,19 +245,22 @@ ul {
     text-decoration: none;
 }
 
-#etiol,
-#primary {
+#etiol, #primary {
     float: right;
 }
 
-#etiol a,
-#etiol small {
+#etiol a, #etiol small {
     color: #777;
 }
 
 #etiol small {
     display: block;
     text-align: right;
+}
+
+#menu {
+    color: #333;
+    float: left;
 }
 
 #menu h2 {
@@ -280,8 +272,7 @@ ul {
     display: inline;
 }
 
-#menu ul li a,
-#menu ul li strong {
+#menu ul li a, #menu ul li strong {
     float: left;
 }
 
@@ -290,8 +281,7 @@ ul {
     text-decoration: none;
 }
 
-#menu ul li a:focus,
-#menu ul li a:hover {
+#menu ul li a:focus, #menu ul li a:hover {
     color: #111;
 }
 
@@ -299,8 +289,7 @@ ul {
     font-weight: normal;
 }
 
-#menu #sections h2,
-#menu #sections ul {
+#menu #sections h2, #menu #sections ul {
     float: right;
 }
 
@@ -308,8 +297,7 @@ ul {
     border-left: 1px solid #bbb;
 }
 
-#menu #sections ul li a,
-#menu #sections ul li strong {
+#menu #sections ul li a, #menu #sections ul li strong {
     border-left: 1px solid #bbb;
 }
 
@@ -317,8 +305,11 @@ ul {
     border: none;
 }
 
-#menu #subsections h2,
-#menu #subsections ul {
+#menu #subsections {
+    float: left;
+}
+
+#menu #subsections h2, #menu #subsections ul {
     float: left;
 }
 
@@ -331,8 +322,7 @@ ul {
     text-decoration: none;
 }
 
-#menu #subsections h2 a:focus,
-#menu #subsections h2 a:hover {
+#menu #subsections h2 a:focus, #menu #subsections h2 a:hover {
     color: #333;
     text-decoration: underline;
 }
@@ -341,24 +331,23 @@ ul {
     color: #111;
 }
 
-#menu #subsections ul li a,
-#menu #subsections ul li strong {
+#menu #subsections ul li a, #menu #subsections ul li strong {
     border-right: 1px solid #bbb;
 }
 
-#primary,
-#secondary.text,
-#vc2,
-#vc3 {
+#primary, #secondary.text, #vc2, #vc3 {
     position: relative;
+}
+
+#primary.photo dl {
+    display: block;
 }
 
 #primary.photo dl dt {
     text-align: center;
 }
 
-#primary.photo dl dt a,
-#primary.photo dl dt img {
+#primary.photo dl dt a, #primary.photo dl dt img {
     display: block;
 }
 
@@ -379,8 +368,7 @@ ul {
     text-decoration: underline;
 }
 
-#primary.photo dl dd a:focus,
-#primary.photo dl dd a:hover {
+#primary.photo dl dd a:focus, #primary.photo dl dd a:hover {
     background: #fff;
     border: 1px #ccc solid;
     color: #333;
@@ -399,7 +387,14 @@ ul {
 #primary.photo h1 {
     bottom: 0;
     color: #555;
+    font-weight: bolder;
     position: absolute;
+}
+
+#primary.photo h1 small {
+    color: #777;
+    font-weight: normal;
+    text-decoration: none;
 }
 
 #primary.photo h1 small a {
@@ -408,8 +403,7 @@ ul {
     text-decoration: none;
 }
 
-#primary.photo h1 small a:focus,
-#primary.photo h1 small a:hover {
+#primary.photo h1 small a:focus, #primary.photo h1 small a:hover {
     color: #333;
     text-decoration: underline;
 }
@@ -442,8 +436,7 @@ ul {
     color: #346;
 }
 
-#primary.text a:focus,
-#primary.text a:hover {
+#primary.text a:focus, #primary.text a:hover {
     color: #24b;
 }
 
@@ -516,14 +509,12 @@ ul {
     text-align: justify;
 }
 
-#primary.text .winner h3,
-#primary.text #finalist h3 {
+#primary.text .winner h3, #primary.text #finalist h3 {
     color: #555;
     font-weight: normal;
 }
 
-#primary.text .winner ul li,
-#primary.text #finalist ul li {
+#primary.text .winner ul li, #primary.text #finalist ul li {
     color: #111;
 }
 
@@ -539,8 +530,7 @@ ul {
     text-decoration: none;
 }
 
-#primary.text .winner ul li a:focus,
-#primary.text .winner ul li a:hover {
+#primary.text .winner ul li a:focus, #primary.text .winner ul li a:hover {
     text-decoration: underline;
 }
 
@@ -552,13 +542,16 @@ ul {
     position: absolute;
 }
 
+#secondary.photo dd {
+    color: #777;
+}
+
 #secondary.photo dd a {
     color: #777;
     text-decoration: none;
 }
 
-#secondary.photo dd a:focus,
-#secondary.photo dd a:hover {
+#secondary.photo dd a:focus, #secondary.photo dd a:hover {
     color: #333;
     text-decoration: underline;
 }
@@ -586,9 +579,11 @@ ul {
 
 #secondary.text #recent {
     bottom: 0;
+    position: absolute;
 }
 
 #secondary.text #recent a {
+    display: block;
     position: absolute;
 }
 
@@ -620,14 +615,10 @@ ul {
 
 #secondary.thumbnails dl.subject {
     bottom: 0;
+    color: #777;
     float: right;
     right: 0;
     top: auto;
-}
-
-#secondary.thumbnails dl.subject dt a,
-#secondary.thumbnails dl.subject dd a {
-    text-decoration: none;
 }
 
 #secondary.thumbnails dl.subject dt strong,
@@ -636,12 +627,16 @@ ul {
 }
 
 #secondary.thumbnails dl.subject dt {
+    color: #777;
+    font-weight: normal;
     text-align: right;
+    text-decoration: none;
 }
 
 #secondary.thumbnails dl.subject dt a {
     color: #777;
     font-weight: normal;
+    text-decoration: none;
 }
 
 #secondary.thumbnails dl.subject dt a:focus,
@@ -675,6 +670,10 @@ ul {
     display: block;
 }
 
+#secondary.thumbnails dl.subject dd a {
+    text-decoration: none;
+}
+
 #secondary.thumbnails dl.subject dd a:focus,
 #secondary.thumbnails dl.subject dd a:hover {
     background: #fff;
@@ -692,13 +691,16 @@ ul {
     visibility: visible;
 }
 
-#secondary.thumbnails h1,
-#secondary.thumbnails h2 {
+#secondary.thumbnails h1, #secondary.thumbnails h2 {
     display: none;
 }
 
 #secondary.thumbnails p.navigation {
     display: block;
+    float: left;
+}
+
+#secondary.thumbnails p.thumbnails {
     float: left;
 }
 
