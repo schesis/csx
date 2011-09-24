@@ -2,6 +2,8 @@
 
 # CSX example - CSS 2.1 spec stylesheet
 
+set -e
+
 NAME="css-21-spec"
 
 cd $(dirname ${0})
@@ -14,10 +16,6 @@ then
     echo >&2 "${0}: must be run from ${base}"
     exit 2
 else
-    set -e
-    alias csx="../../scripts/csx"
-    export PYTHONPATH="../../:${PYTHONPATH}"
-
     echo "removing existing output files"
     rm -rf split csx compact bare pretty
     mkdir split csx compact bare pretty
@@ -26,28 +24,18 @@ else
     sed '/^@media print {$/,$d' original/default.css > split/all.css
     sed '1,/^@media print {$/d;$d' original/default.css > split/print.css
 
-    echo "converting CSS stylesheets to CSX "
-    for target in all print
-    do
-        csx -dmo split/${target}.css > csx/${target}.csx
-    done
+    cd ../..
+    export PATH=".:${PATH}"
 
-    echo "converting CSX stylesheets to 'compact' CSS"
-    for target in all print
+    for name in all print
     do
-        csx --compact csx/${target}.csx > compact/${target}.css
-    done
-
-    echo "converting CSX stylesheets to 'bare' CSS"
-    for target in all print
-    do
-        csx --bare csx/${target}.csx > bare/${target}.css
-    done
-
-    echo "converting CSX stylesheets to 'pretty' CSS"
-    for target in all print
-    do
-        csx --pretty csx/${target}.csx > pretty/${target}.css
+        echo "converting ${name}.css to CSX"
+        csx --aggressive ${base}/split/${name}.css > ${base}/csx/${name}.csx
+        for style in bare compact pretty
+        do
+            echo "converting ${name}.csx to ${style} CSS"
+            csx --${style} ${base}/csx/${name}.csx > ${base}/${style}/${name}.css
+        done
     done
 fi
 
