@@ -993,7 +993,7 @@ class Text(str):
     appended to the `subs` attribute. They must not contain newlines,
     unless escaped with a backslash. CSS comments are removed.
 
-    `str(an_escapedstring_instance)` reconstructs the original string,
+    `str(instance_of_Text)` reconstructs the original string,
     removing extraneous whitespace.
 
     Examples::
