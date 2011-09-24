@@ -1,0 +1,17 @@
+P {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-indent: 1em;
+}
+
+/* the following doesn't work for now,
+   instead we rely on a patched version of html2ps which has this built-in */
+.dlink { display: none }
+
+/* the following doesn't work for now,
+   instead we rely on a patched version of html2ps which has this built-in */
+DIV.navbar {
+   display: none;
+}
+
+H1 { page-break-before: right }
