@@ -8,12 +8,12 @@ NAME="css-21-spec"
 
 cd $(dirname ${0})
 
-base="examples/${NAME}"
+dir="examples/${NAME}"
 cwd2="$(basename $(dirname $(pwd)))/$(basename $(pwd))"
 
-if [[ ${base} != ${cwd2} ]]
+if [[ ${dir} != ${cwd2} ]]
 then
-    echo >&2 "${0}: must be run from ${base}"
+    echo >&2 "${0}: must be run from ${dir}"
     exit 2
 else
     echo "removing existing output files"
@@ -30,11 +30,11 @@ else
     for name in all print
     do
         echo "converting ${name}.css to CSX"
-        csx --aggressive ${base}/split/${name}.css > ${base}/csx/${name}.csx
+        csx --aggressive ${dir}/split/${name}.css > ${dir}/csx/${name}.csx
         for style in bare compact pretty
         do
             echo "converting ${name}.csx to ${style} CSS"
-            csx --${style} ${base}/csx/${name}.csx > ${base}/${style}/${name}.css
+            csx --${style} ${dir}/csx/${name}.csx > ${dir}/${style}/${name}.css
         done
     done
 fi
