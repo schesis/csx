@@ -15,8 +15,8 @@ problematic. ::
     >>> import sys
     >>> sys.stderr = sys.stdout
 
-    >>> warnings.warn(Alert("squee"))
-    <string>:1: Alert: squee
+    >>> warnings.warn(Alert("squee")) # doctest:+SKIP
+    (...):1: Alert: squee
 
 It inherits from `UserWarning`, to which it adds no extra behviour.
 
