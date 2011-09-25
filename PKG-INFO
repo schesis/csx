@@ -15,8 +15,8 @@ Description: csx - Create, manipulate and convert CSX stylesheets.
         CSX is also somewhat stricter than CSS (for example, you can't split a
         quoted string over more than one line, and comments must be terminated).
         
-        See http://csx-style.org (or the file `README.txt` provided with this
-        module) for a complete description of the differences between CSS and CSX.
+        See the file `README.txt` provided with this module for a complete
+        description of the differences between CSS and CSX.
         
         .. _CSS 2.1: http://www.w3.org/TR/CSS21
         

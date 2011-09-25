@@ -16,8 +16,6 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-# TODO: register csx-style.org, publish, etc :-)
-
 """csx - Create, manipulate and convert CSX stylesheets.
 
 CSX is a style language based on `CSS 2.1`_, with two improvements:
@@ -28,8 +26,8 @@ CSX is a style language based on `CSS 2.1`_, with two improvements:
 CSX is also somewhat stricter than CSS (for example, you can't split a
 quoted string over more than one line, and comments must be terminated).
 
-See http://csx-style.org (or the file `README.txt` provided with this
-module) for a complete description of the differences between CSS and CSX.
+See the file `README.txt` provided with this module for a complete description
+of the differences between CSS and CSX.
 
 .. _CSS 2.1: http://www.w3.org/TR/CSS21
 
