@@ -14,6 +14,7 @@ setup(
     name = "csx",
     py_modules = ["csx"],
     scripts = ["csx"],
+    url = "https://bitbucket.org/schesis/csx",
     version = csx.__version__,
 
     classifiers = [
