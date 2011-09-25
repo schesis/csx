@@ -40,7 +40,7 @@ import copy
 import re
 
 __author__ = "Zero Piraeus <z@etiol.net>"
-__version__ = "0.09.07"
+__version__ = "0.11.09"
 
 DEFAULT_STYLE = "pretty"
 

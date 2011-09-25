@@ -2,7 +2,7 @@
 
 # CSX example - CSS 2.1 spec stylesheet
 
-VERSION="0.09.07"
+VERSION="0.11.09"
 
 cd $(dirname ${0})
 

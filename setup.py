@@ -14,7 +14,6 @@ setup(
     name = "csx",
     py_modules = ["csx"],
     scripts = ["csx"],
-    url = "http://csx.org", # not bloody likely
     version = csx.__version__,
 
     classifiers = [
