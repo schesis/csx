@@ -99,7 +99,17 @@ class _Comparable(object):
 
 class _Renderable(object):
 
-    """Base class for renderable objects."""
+    """Base class for renderable objects.
+
+    Example::
+
+        >>> class Chars(_Renderable, list): pass
+        >>> Chars("squee")
+        Chars('s,q,u,e,e')
+
+    """
+
+    SEP = {s: "," for s in STYLES}
 
     def __repr__(self):
         return "{0}({1!r})".format(self.__class__.__name__, str(self))
@@ -122,7 +132,6 @@ class _Renderable(object):
             ol li a
 
         """
-        # `SEP` is defined by the subclass.
         return self.SEP[style].join(self)
 
 
@@ -737,7 +746,7 @@ class Rules(_Renderable_Recursive, list):
 
 class Selector(_Renderable, _Comparable, tuple):
 
-    """CSX selector.
+    """A CSX selector; e.g. "ol > li a[lang|='en']".
 
     Example::
 
@@ -792,7 +801,8 @@ class Selector(_Renderable, _Comparable, tuple):
         return self
 
     def __lt__(self, other):
-        # Results are cached for speed.
+        # This comparison is expensive and frequently performed, so we
+        # optimize it by caching the result.
         try:
             return self.__lt_cache[(self, other)]
         except KeyError:
@@ -838,7 +848,7 @@ class Selector(_Renderable, _Comparable, tuple):
 
 class Selectors(_Renderable_Recursive, _Comparable, set):
 
-    """CSX selector block.
+    """A CSX selector block; e.g. "dl dd, dl dt, ol li, ul li".
 
     Example::
 
@@ -862,6 +872,8 @@ class Selectors(_Renderable_Recursive, _Comparable, set):
         return iter(sorted(set(self)))
 
     def __lt__(self, other):
+        # This comparison is expensive and frequently performed, so we
+        # optimize it by caching the result.
         for self_item, other_item in zip(self, other):
             if self_item != other_item:
                 return self_item < other_item
