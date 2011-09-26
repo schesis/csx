@@ -24,7 +24,7 @@ setup(
         "License :: OSI Approved :: GNU General Public License (GPL)",
         "Natural Language :: English",
         "Operating System :: POSIX",
-        "Programming Language :: Python :: 3.0",
+        "Programming Language :: Python :: 3",
         "Topic :: Internet :: WWW/HTTP",
         "Topic :: Text Processing",
         "Topic :: Utilities",

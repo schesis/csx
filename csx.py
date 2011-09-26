@@ -38,7 +38,7 @@ import copy
 import re
 
 __author__ = "Zero Piraeus <z@etiol.net>"
-__version__ = "0.11.09.2"
+__version__ = "0.11.09.3"
 
 DEFAULT_STYLE = "pretty"
 
