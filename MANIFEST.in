@@ -1,6 +1,5 @@
 include *.py
 include *.txt
 include COPYING
-graft doc
-recursive-include examples */original/* */original/*/* */run.sh
-include examples/run-all.sh
+recursive-include doc *.txt
+recursive-include examples */original/* */original/*/* *.sh

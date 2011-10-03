@@ -62,9 +62,9 @@ capabilities.
 How to install it
 -----------------
 
-Unpack the tarball, cd to the csx-x.y.z directory, and type ::
+At a shell prompt, type ::
 
-    sudo python setup.py install
+    sudo python3 setup.py install
 
 How to use it
 -------------
