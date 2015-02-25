@@ -272,12 +272,12 @@ class Declarations(_Renderable_Recursive, _Comparable, dict):
 
         Example::
 
-            >>> from pprint import pprint
-
             >>> ds = Declarations("color: red; font-family: serif")
 
-            >>> pprint(ds.items())
-            {Declaration('color: red'), Declaration('font-family: serif')}
+            >>> d1 = Declaration("color: red")
+            >>> d2 = Declaration("font-family: serif")
+
+            >>> assert ds.items() == {d1, d2}
 
         """
         return {Declaration(x) for x in super().items()}
