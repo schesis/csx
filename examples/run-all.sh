@@ -2,11 +2,9 @@
 
 # CSX example - CSS 2.1 spec stylesheet
 
-VERSION="0.11.10.03"
-
 cd $(dirname ${0})
 
-base="csx-${VERSION}/examples"
+base="csx/examples"
 cwd2="$(basename $(dirname $(pwd)))/$(basename $(pwd))"
 
 if [[ ${base} != ${cwd2} ]]
